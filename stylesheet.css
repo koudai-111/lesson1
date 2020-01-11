@@ -1,0 +1,202 @@
+*{
+    font-family: serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #131111d8;
+}
+header h1{
+    font-size:  30px;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.heading{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.heading ul{
+    display: flex;
+    align-items: center;
+}
+header li{
+    list-style-type: none;
+    color: #fff;
+    display: block;
+    font-size: 8px;
+    padding: 1px 5px;
+    margin: 3px;
+    cursor: pointer;
+}
+.title-wrapper{
+    height: 500px;
+    width: 100%;
+    background-image:url(./img/creed_1.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+.title-wrapper::after{
+    content:'';
+    height: 500px;
+    width: 100%;
+    background: radial-gradient(rgba(154, 224, 233, 0.123),rgba(55, 116, 177, 0.452));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.animation-text{
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-animation-name: fadein;
+            animation-name: fadein;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes fadein{
+    from{
+        opacity:0;
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+    }
+    to{
+        opacity:1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+    }
+    to{
+        opacity:1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+.message-wrapper{
+    text-align: center;
+    margin: 100px;
+}
+.message-wrapper h2{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.message-wrapper p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    -webkit-animation-name: appear;
+            animation-name: appear;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes appear{
+    from{
+        color: #fff;
+    }
+    to{
+        color: #000;
+    }
+}
+@keyframes appear{
+    from{
+        color: #fff;
+    }
+    to{
+        color: #000;
+    }
+}
+.pictures-wrapper{
+    width: 100%;
+    border-top: solid 1px;
+    background-color: #f3f2f294;
+    padding: 50px 100px;
+}
+.photo{
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+.pictres{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+.picture{
+    width: 32%;
+    height: auto;
+    padding: 1em;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+footer{
+    border-top: 1px solid rgb(10, 10, 10);
+    background-color: #080808d0;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer-list{
+    width: 50%;
+}
+.footer-list ul{
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 20px;
+}
+.btn{
+    list-style: none;
+    width: 50%;
+}
+.btn-a{ 
+    color:#fff;
+    padding: 20px;
+    text-decoration: none;
+}
+.shop-list{
+    padding: 20px;
+    width: 50%;
+}
+.shop-list li{
+    list-style: none;
+    padding-right: 10px;
+}
+.btn-b{
+    color: #fff;
+}
